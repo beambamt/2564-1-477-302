@@ -1,0 +1,46 @@
+<!-- CSS Component
+1.selector > element, id, class name
+2.declaration > 
+    2.1 property > color, text-style, text-size, .......
+    2.2 calue > red, #ffaabb, blod, italic, 2px, 2em. 24px -->
+<!-- unnit
+em, px, pt, in, cm, mm, xx%
+1em = 16px
+2em = 32px -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* div, a { color: red; font-weight: bold;}
+        div a { color: rebeccapurple; font-weight: bold;}
+        p { color: green; font-size: 2em}
+        #description { color: blue}
+        .title { color: yellow;}
+        body { font-style: italic; font-family: 'Times New Roman', Times, serif;}
+        #sub-desc { color:#ffaacc;} */
+        body { color: #ffaa33; font-family: 'Charmonman', cursive; font-size: 3em;}
+        p {font-weight: normal; text-align: center;}
+        a {font:normal 2em;}
+    </style>
+    <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title" style="color: wheat; font-size: 24px;">Test CSS div
+        <p>Test CSS - under div</p>
+        <a href="#">Test CSS - link</a>
+    </div>
+    <p id="description">Test CSS
+        <div id="sub-desc">Test CS - under p</div>
+    </p>
+    <a href="#">Test CSS - link</a>
+    <div>ทดสอบภาษาไทย</div>
+</body>
+</html>
