@@ -13,43 +13,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">     
 </head>
 <body>
-    <h2>แบบฟอร์มบันทึกข้อมูลการจองคิวฉีดวัคซีน COVID-19</h2>
-    <div>
+    <div align=center>
+        <h2>แบบฟอร์มบันทึกข้อมูลการจองคิวฉีดวัคซีน COVID-19</h2>
         <img src="logo.jpg" alt="logo" width="150" height="150">
     </div>
-    <form method="GET" action="confirm.html" enctype="multipart/form-data">
-        <label for="hospital">เลือกโรงพยาบาล</label>
-        <select id="hospital">
-            <option value="0">โรงพยาบาลม.อ.</option>
-            <option value="1">โรงพยาบาลหาดใหญ่</option>
-        </select><br>
-        <label for="id">เลขบัตรประชาชน</label>
-        <input type="text" id="id"><br>
-        <label for="phonenum">เบอร์โทรศัพท์</label>
-        <input type="text" id="phonenum"><br>
-        <label for="type">คำนำหน้า</label>
-        <select id="type">
-            <option value="0">นาย</option>
-            <option value="1">นาง</option>
-            <option value="2">นางสาว</option>
-        </select><br>
-        <label for="surname">ชื่อ</label>
-        <input type="text" id="surname"><br>
-        <label for="name">สกุล</label>
-        <input type="text" id="lastname"><br>
-        <label for="gender">เพศ</label>
-        <select id="gender">
-            <option value="0">ชาย</option>
-            <option value="1">หญิง</option>
-        </select><br>
-        <label for="brithday">วันเกิด</label>
-        <input type="date" id="brithday"><br>
-        <label for="ages">อายุ</label>
-        <input type="text" id="ages"><br><br>
-        <input type="checkbox">ยอมรับเงื่อนไข<br><br>
-        <input type="submit" value="บันทึกการจองคิว">
-        <input type="reset" value="ยกเลิก">
-        <p>asd</p>
-    </form>
+    <div align=center>
+        <form method="GET" action="confirm.html">
+            <table>
+                <tr>
+                    <td>
+                        <label for="hospital">เลือกโรงพยาบาล : </label><br>
+                        <select id="hospital">
+                            <option value="0">โรงพยาบาลม.อ.</option>
+                            <option value="1">โรงพยาบาลหาดใหญ่</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="id">เลขบัตรประชาชน : </label><br>
+                        <input type="text" id="id">
+                    </td>
+                    <td>
+                        <label for="phonenum">เบอร์โทรศัพท์ : </label><br>
+                        <input type="text" id="id">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="type">คำนำหน้า :</label><br>
+                        <select id="type">
+                            <option value="0">นาย</option>
+                            <option value="1">นาง</option>
+                            <option value="2">นางสาว</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="surname">ชื่อ :</label><br>
+                        <input type="text" id="surname">
+                    </td>
+                    <td>
+                        <label for="name">สกุล :</label><br>
+                        <input type="text" id="lastname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">เพศ :</label><br>
+                        <select id="gender">
+                            <option value="0">ชาย</option>
+                            <option value="1">หญิง</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="brithday">วันเกิด :</label><br>
+                        <input type="date" id="brithday">
+                    </td>
+                    <td>
+                        <label for="ages">อายุ :</label><br>
+                        <input type="number" id="ages">
+                    </td>
+                </tr>
+            </table>
+            <p style="color: red;">กรุณากรอกข้อมูลให้ครับทุกช่อง</p>
+            <a href="https://www.hfocus.org/content/2021/04/21527">เงื่อนไขจองวัคซีน</a><br>
+            <input type="checkbox">ยอมรับเงื่อนไข
+            <br>
+            <br>
+            <input type="submit" value="ยืนยัน">
+            <input type="reset" value="ยกเลิก">
+        </form>
+    </div>  
+    
 </body>
 </html>
+
+        
+         
