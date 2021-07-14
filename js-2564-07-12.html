@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function print_msg() {
+        //     document.getElementById("msg").innerHTML = "Hello world";
+        // }
+        function validate_form() {
+            if (document.getElementById("username").value=='') {
+                alert("Plese enter user name");
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- <button onclick="print_msg();">Test JS</button> -->
+    <!-- <div id="msg"></div> -->
+    <form action="https://www.fms.psu.ac.th/?lang=en" onsubmit="validate_form();">
+        <!-- <input type="text" required>
+        <input type="submit" value="Continue"> -->
+        <label for=""></label>
+        <input type="text" id="username" >
+        <input type="submit" value="Continue">
+    </form>
+</body>
+</html>
