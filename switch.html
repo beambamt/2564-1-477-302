@@ -9,8 +9,8 @@
 <body>
     <script>
         var str_day = "";
-        var get_num_day = new Date().getDate();
-        
+        var get_num_day = new Date().getDay();
+        // console.log(get_num_day);
         switch (get_num_day) {
             case 0:
                 str_day = "วันอาทิตย์";
@@ -34,21 +34,42 @@
                 str_day = "วันเสาร์";
                 break;
         }
-        switch (get_num_month) {
-            case 0:
-                str_month 
-                
-                break;
-        
-            default:
-                break;
-        }
-
-        var gt_num_date = new Date ().getDate();
         console.log(str_day);
 
-        var str_moun
-        console.log(new Date()); //Wed Aug 04 2021 -> วันพุธ ที่ 4 สิงหาคม 2564
+        var str_month = "";
+        var get_num_month = new Date().getMonth();
+        switch (get_num_month) {
+            case 0:
+                str_month = "มกราคม";
+                break;
+            case 1:
+                str_month = "กุมภาพันธ์";
+                break;
+            case 2:
+                str_month = "มีนาคม";
+                break;
+            case 3:
+                str_month = "เมษายน";
+                break;
+            case 4:
+                str_month = "พฤษภาคม";
+                break;
+            case 5:
+                str_month = "มิถุนายน";
+                break;
+            case 6:
+                str_month = "กรกฎาคม";
+                break;
+            case 7:
+                str_month = "สิงหาคม";
+                break;
+        }
+        
+        var get_num_date = new Date().getDate();
+        var get_num_year = parseInt(new Date().getFullYear()) + 543;
+
+        console.log(str_day + " ที่ " + get_num_date + " " +str_month + " " + get_num_year);
+        //วันเสาร์ ที่ 7 สิงหาคม 2564
     </script>
 
 </body>

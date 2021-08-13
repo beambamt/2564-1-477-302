@@ -7,13 +7,70 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="result"></div>
-    <script>
+    <!-- <script>
         var text = "";
         for (let i = 0; i < 5; i++) {
             document.writeln(i);
-
+            
         }
+    </script> -->
+    <!-- <script>
+        for (i = 0; i < 5; i++) {
+            for (x = i; x < 5; i++){
+                console.log(x);
+            } 
+        }
+    </script> -->
+    <!-- <script>
+        for (i = 0; i < 5; i++) {
+            document.writeln(x);
+        }
+    </script> -->
+
+    <!-- <script>
+        var cars = ["BMW", "Volvo", "Benz", "Ford"];
+        var i, len, text;
+        len = cars.length;
+        text = "";
+        for (i=0; i < len; i++){
+            document.writeln(cars[i]+"<br>");
+        }    
+    </script> -->
+
+    <!-- <p id="demo"></p>
+    <script>
+        var cars = ["BMW", "Volvo", "Benz", "Ford"];
+        var i=0, text="";
+        for (i in cars){
+            text += cars[i] + "<br>";
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script> -->
+
+    <!-- <p id="demo"></p>
+    <script>
+        var cars = ["BMW", "Volvo", "Benz", "Ford"];
+        var i=0, text="";
+        while (i < cars.length){
+            text = cars[i] + "<br>";
+            i++;
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script> -->
+
+    <p id="demo"></p>
+    <script>
+        var cars = ["BMW", "Volvo", "Benz", "Ford"];
+        var i=0, text="";
+        while (i < cars.length){
+            text = text + cars[i] + "<br>";
+            // text += cars[i] + "<br>";
+            // #1 text = "" BMW 
+            // #2 text = BMW volvo
+            // #3 text = BMW volvo Benz
+            i++; //i= i+1;
+        }
+        document.getElementById("demo").innerHTML = text;
     </script>
 </body>
 </html>
