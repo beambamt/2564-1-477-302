@@ -38,7 +38,7 @@
             <!----- First Name ---------------------------------------------------------->
             <tr>
                 <td>FIRST NAME</td>
-                <td><input type="text" id="First_Name" name="First_Name"/>
+                <td><input type="text" id="First_Name" name="First_Name" maxlength="30"/>
                     (max 30 characters a-z and A-Z)
                 </td>
             </tr>
@@ -46,7 +46,7 @@
             <!----- Last Name ---------------------------------------------------------->
             <tr>
                 <td>LAST NAME</td>
-                <td><input type="text" id ="Last_Name" name="Last_Name"/>
+                <td><input type="text" id ="Last_Name" name="Last_Name" maxlength="30"/>
                     (max 30 characters a-z and A-Z)
                 </td>
             </tr>
@@ -156,14 +156,14 @@
             <!----- Email Id ---------------------------------------------------------->
             <tr>
                 <td>EMAIL ID</td>
-                <td><input type="text" name="Email_Id" maxlength="100" /></td>
+                <td><input type="email" id = "Email_Id" name="Email_Id" maxlength="100" /></td>
             </tr>
 
             <!----- Mobile Number ---------------------------------------------------------->
             <tr>
                 <td>MOBILE NUMBER</td>
                 <td>
-                    <input type="text" name="Mobile_Number" maxlength="10" />
+                    <input type="text" id = "Mobile_Number" name="Mobile_Number" maxlength="10" />
                     (10 digit number)
                 </td>
             </tr>
@@ -186,7 +186,7 @@
             <!----- City ---------------------------------------------------------->
             <tr>
                 <td>CITY</td>
-                <td><input type="text" name="City" maxlength="30" />
+                <td><input type="text" id = "City" name="City" maxlength="30" />
                     (max 30 characters a-z and A-Z)
                 </td>
             </tr>
@@ -251,20 +251,62 @@
             if (fname.value == "") {
                 alert("Plese enter first name");
                 fname.focus();
-            } else if (fname.value.length > 30) {
-                alert("First name not more than 30 characters!");
-                fname.focus();
             }
+
             //last_Name
             var lname = document.getElementById("Last_Name");
             console.log(lname.value);
             if (lname.value == "") {
                 alert("Plese enter last name");
                 lname.focus();
-            } else if (lname.value.length > 30) {
-                alert("Last name not more than 30 characters!");
-                lname.focus();
             }
+
+            //Birthday_Day
+            var bd_day = document.getElementById("Birthday_Day");
+            console.log(bd_day.value);
+            if (bd_day.value == "-1") {
+                alert("Plese enter birthday date");
+                bd_day.focus();
+            }
+
+            //Birthday_Month
+            var bd_month = document.getElementById("Birthday_Month");
+            console.log(bd_month.value);
+            if (bd_month.value == "-1") {
+                alert("Plese enter birthday month");
+                bd_month.focus();
+            }
+
+            //Birthday_Year
+            var bd_year = document.getElementById("Birthday_Year");
+            console.log(bd_year.value);
+            if (bd_year.value == "-1") {
+                alert("Plese enter birthday year");
+                bd_year.focus();
+            }
+
+            //Email_Id
+            var email = document.getElementById("Email_Id");
+            console.log(email.value);
+            if (email.value == "") {
+                alert("Plese enter Email");
+                email.focus();
+            }
+
+            //Mobile_Number
+            var mnumber = document.getElementById("Mobile_Number");
+            var check = isFinite(mnumber.value)
+            console.log(check);
+            if (mnumber.value == "") {
+                alert("Plese enter Mobile Number");
+                mnumber.focus();
+            } else if (check) {  
+            } else 
+                alert("Mobile number not ")
+                mnumber.focus();
+
+            
+ 
         }
     </script>
 
