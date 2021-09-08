@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-2</title>
+</head>
+
+<body>
+    <div>
+        <h1>สวัสดีครับ กดปุ่มด้านล่างเพื่อกรอกข้อมูล</h1>
+    </div>
+    <button id="Show" onclick="show_dialog()">กรอกข้อมูลกดเลย!</button>
+    <dialog id="myDialog">
+        <form action="https://www.google.com/">
+            <table>
+                <tr>
+                    <td>
+                        <label for="input-name">ชื่อ-นามสกุล: </label>
+                    </td>
+                    <td>
+                        <input class="form-input" id="input-name" type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>รูปแบบการปริ้นงาน: </label>
+                    </td>
+                    <td>
+                        <select id="hospital" required>
+                            <option value="0">ปริ้นสี หน้าเดียว</option>
+                            <option value="1">ปริ้นสี หน้า-หลัง</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <button>ยืนยัน</button>
+            <button id="" type="reset">Reset</button>
+            <button type="button" onclick="close_dialog()">ยกเลิก</button>
+        </form>
+    </dialog>
+
+    <script>
+        function show_dialog(){
+            var showdialog = document.getElementById("myDialog");
+            showdialog.showModal();
+        }
+        function close_dialog(){
+            var closedialog = document.getElementById("myDialog");
+            closedialog.close()
+        }
+    </script>
+
+
+
+
+    <!-- <div>
+        <h1>แบบฟอร์มสั่งปริ้นงานออนไลน์</h1>
+    </div> -->
+<!-- 
+    <button id="show" onclick="test()">ยืนยัน</button>
+    <button id="" type="reset">ยกเลิก</button>
+    <dialog id="myDialog">
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <label for="input-name">ชื่อ-นามสกุล: </label>
+                    </td>
+                    <td>
+                        <input class="form-input" id="input-name" type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>รูปแบบการปริ้นงาน: </label>
+                    </td>
+                    <td>
+                        <select id="hospital" required>
+                            <option value="0">ปริ้นสี หน้าเดียว</option>
+                            <option value="1">ปริ้นสี หน้า-หลัง</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+    
+        </form>
+        <button id="test" onclick="closee()">Confirm</button>
+    </dialog>
+
+    <script>
+        function test(){
+            var dialog = document.getElementById("myDialog");
+            dialog.showModal()
+        }
+        function closee(){
+            var dialog = document.getElementById("myDialog");
+            dialog.close()
+        }
+    </script> -->
+
+</body>
+
+</html>
