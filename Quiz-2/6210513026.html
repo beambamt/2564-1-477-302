@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz-2</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <style>
     body {
       color: rgb(0, 0, 0);
@@ -16,8 +17,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
-
-  <script src=""></script>
 
   <!-- เปิด-ปิด dialog -->
   <script>
@@ -34,8 +33,8 @@
   <!-- เอาชื่อไปแสดงใน dialog -->
   <script>
     function showname() {
-      x = document.getElementById("name").value
-      document.getElementById("showname").innerHTML = "สวัสดีคุณ " + x + "<br>" + " คุณสามารถดูที่อยู่ของท่านได้ในแมพด้านล่าง"
+      let x = document.getElementById("name").value
+      document.getElementById("showname").innerHTML = "สวัสดีคุณ " + x + "<br>" + " คุณสามารถดูตำแหน่งปัจจุบันของคุณได้ในแมพด้านล่าง"
     }
   </script>
 
@@ -114,14 +113,14 @@
         } else {
           localStorage.clickcount = 1;
         }
-        document.getElementById("counter").innerHTML = "คุณกดดูตำแหน่งของคุณไปแล้ว " + localStorage.clickcount + " ครั้ง.";
+        document.getElementById("counter").innerHTML = "คุณกดดูตำแหน่งของคุณไปแล้ว " + localStorage.clickcount + " ครั้ง";
       } else {
-        document.getElementById("counter").innerHTML = "Sorry, your browser does not support web storage...";
+        document.getElementById("counter").innerHTML = "บราวเซอร์ของท่านไม่ลองรับ web storage...";
       }
     }
     function del() {
       localStorage.removeItem("clickcount");
-      document.getElementById("counter").innerHTML = "คุณกดดูตำแหน่งของคุณไปแล้ว " + "0" + " ครั้ง.";
+      document.getElementById("counter").innerHTML = "คุณกดดูตำแหน่งของคุณไปแล้ว " + "0" + " ครั้ง";
     }
   </script>
 </head>
@@ -137,7 +136,8 @@
     <label for="name">ชื่อ: </label>
     <input type="text" id="name"><br><br>
     <button type="button" class="btn btn-dark" onclick="checkname()">ยืนยัน</button>
-    <button type="button" class="btn btn-dark" onclick="del(),document.location.reload(true)">เคลียข้อมูล</button><br><br>
+    <button type="button" class="btn btn-dark"
+      onclick="del(),document.location.reload(true)">เคลียข้อมูล</button><br><br>
     <p id="showname"></p>
     <div id="mapholder"></div><br>
     <div id="counter"></div>
